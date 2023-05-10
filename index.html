@@ -308,7 +308,7 @@
 					<h2 class="animate-box"><span>We mined the internet for fake news data.</span></h2>
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 subtext animate-box">
-							<h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h3>
+							<h3>After defining the goal of this project, we now move on to the next step: data collection. <span style="color: #ff2e63;">Data collection</span> is the process of gathering relevant information that will help us answer the research questions.</h3>
 						</div>
 					</div>
 					<div class="row">
@@ -319,56 +319,174 @@
 			</div>
 
 			<div class="row">
-				<div class="col-md-4">
-					<div class="fh5co-portfolio animate-box">
-						<a>
-							<div class="portfolio-entry" style="background-image: url(images/portfolio-1.jpg);">
-								<div class="desc">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-								</div>
+				<div class="col-md-12">
+					<div class="data__item animate-box">
+						<h3 class="data__title text-center">Keywords</h3>
+						<p class="data__sentence text-center">We used the following keywords in searching for relevant tweets.</p>
+						<p class="data__sentence text-center" style="margin-top: 20px; line-height: 2.5;">
+							<a>angat npa</a>
+							<a>angat buhay npa</a>
+							<a>angat buhay npa cpp</a>
+							<a>angat buhay recruit npa</a>
+							<a>angat buhay cpp</a>
+							<br/>
+							<a>leni ngo npa</a>
+							<a>angatbuhay npa</a>
+						</p>
+					</div>	
+				</div>
+
+				<div class="col-md-12">
+					<div class="data__item animate-box">
+						<h3 class="data__title text-center">Tools</h3>
+						<p class="data__sentence text-center">We collected tweets using two methods.</p>
+
+						<div style="display: flex; justify-content: space-around; margin-top: 30px;">
+							<div class="text-center" style="align-self: flex-start; padding-right: 30px; border-right: 1px solid #ff2e623d; flex: 1;">
+								<img src="images/data_1.png" style="width: 40%; margin-bottom: 20px;">
+								<p class="data__sentence" >
+									<span style="color: #ff2e63; line-height: 50px;">Manual collection</span>
+									<br/>We manually typed in the keywords above in Twitter's search bar then diligently scrolled through the results.
+								</p>
 							</div>
-							<div class="portfolio-text text-center">
-								<h3>Topic</h3>
-								<ul class="stuff">
-									<li>Ornare nulla proin odio consequat.</li>
-								</ul>
-							</div> 
-						</a>
+
+							<div class="text-center" style="align-self: flex-start; padding-left: 30px; flex: 1;">
+								<img src="images/data_2.png" style="width: 45%; margin-bottom: 20px;">
+								<p class="data__sentence">
+									<span style="color: #ff2e63; margin-bottom: 10px; line-height: 50px;">Automated collection</span>
+									<br/>We created Python scripts to automate the collection of tweets containing the keywords above.
+								</p>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12 section-heading text-center" style="padding-top: 60px;">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext animate-box">
+							<h3><span style="color: #ff2e63;">Machine learning heavily relies on high-quality data.</span> To ensure that we model data accurately and produce good results, below are the <span style="color: #ff2e63;">criteria</span> we established in selecting tweets to be included in our dataset.</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext animate-box">
+						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
-					<div class="fh5co-portfolio animate-box">
-						<a>
-							<div class="portfolio-entry" style="background-image: url(images/portfolio-2.jpg);">
-								<div class="desc">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-								</div>
-							</div>
-							<div class="portfolio-text text-center">
-								<h3>Keywords</h3>
-								<ul class="stuff">
-									<li>Ornare nulla proin odio consequat.</li>
-								</ul>
-							</div> 
-						</a>
-					</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="data__item animate-box" style="min-height: 425px;">
+						<div class="text-center">
+							<img src="images/data_3.png" style="width: 100%; margin: 20px 0;">
+							<p class="data__sentence">
+								<br/>&nbsp;
+								<br/>Recent tweets posted in 2023 are not included. We will only select <span style="color: #ff2e63;">tweets posted between 2016 to 2022.</span>
+							</p>
+						</div>
+					</div>	
 				</div>
-				<div class="col-md-4">
-					<div class="fh5co-portfolio animate-box">
-						<a>
-							<div class="portfolio-entry" style="background-image: url(images/portfolio-3.jpg);">
-								<div class="desc">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-								</div>
+
+				<div class="col-md-6">
+					<div class="data__item animate-box" style="min-height: 425px;">
+						<div class="text-center">
+							<p class="data__sentence">
+								Tweets should <span style="color: #ff2e63;">explicitly claim the dis/misinformation as a fact.</span> Here is a sample tweet from our dataset that passes this criteria:
+							</p>
+							<img src="images/data_4.png" style="width: 100%; margin-top: 30px;">
+						</div>
+					</div>		
+				</div>
+				
+
+				<div class="col-md-12">
+					<div class="data__item animate-box">
+						<p class="data__sentence text-center">Tweet contents will be labeled with one or more of the following <span style="color: #ff2e63;">content types:</span></p>
+
+						<div style="display: flex; justify-content: space-around; margin-top: 30px;">
+							<div class="text-center" style="align-self: flex-start; padding-right: 30px; flex: 1;">
+								<p class="data__sentence" >
+									<span style="color: #ff2e63; line-height: 50px;">Rational</span>
+									<br/>[informational, functional, educational, or current event]
+									<br/>&nbsp;
+								</p>
+								<img src="images/data_5.png" style="width: 100%; margin-top: 20px;">
 							</div>
-							<div class="portfolio-text text-center">
-								<h3>Tools</h3>
-								<ul class="stuff">
-									<li>Ornare nulla proin odio consequat.</li>
-								</ul>
-							</div> 
-						</a>
-					</div>
+
+							<div class="text-center" style="align-self: flex-start; padding: 0 30px; border: 1px solid #ff2e623d; border-width: 0 1px; flex: 1;">
+								<p class="data__sentence" >
+									<span style="color: #ff2e63; line-height: 50px;">Emotional</span>
+									<br/>[interactional, experiential, personal, community, relationship, cause-related]
+								</p>
+								<img src="images/data_6.png" style="width: 100%; margin-top: 20px;">
+							</div>
+
+							<div class="text-center" style="align-self: flex-start; padding-left: 30px; flex: 1;">
+								<p class="data__sentence">
+									<span style="color: #ff2e63; margin-bottom: 10px; line-height: 50px;">Transactional</span>
+									<br/>[product/service ads, branding, sales promotion, monetary]
+									<br/>&nbsp;
+									<br/>&nbsp;
+									<br/>We were unable to label any tweet in our dataset as Transactional.
+								</p>
+							</div>
+						</div>
+					</div>	
+				</div>
+
+				<div class="col-md-12">
+					<div class="data__item animate-box">
+						<p class="data__sentence text-center"><span style="color: #ff2e63;">Replies and quote tweets </span>that agree with or affirm the original tweet containing dis/misinformation are also included in the dataset.</p>
+
+						<div style="display: flex; justify-content: space-around; margin-top: 30px;">
+							<div class="text-center" style="align-self: flex-start; padding-right: 30px; border-right: 1px solid #ff2e623d; flex: 1;">
+								<img src="images/data_7.png" style="width: 100%;">
+							</div>
+
+							<div class="text-center" style="align-self: flex-start; padding-left: 30px; flex: 1;">
+								<img src="images/data_8.png" style="width: 100%;">
+							</div>
+						</div>
+					</div>	
+				</div>
+
+				<div class="col-md-12">
+					<div class="data__item animate-box">
+						<p class="data__sentence text-center">Twitter accounts will be tagged with one of the following <span style="color: #ff2e63;">account types:</span></p>
+
+						<div style="display: flex; justify-content: space-around; margin-top: 30px;">
+							<div class="text-center" style="align-self: flex-start; padding-right: 30px; flex: 1;">
+								<p class="data__sentence" >
+									<span style="color: #ff2e63; line-height: 50px;">Anonymous</span>
+									<br/>Accounts that have pseudonyms, aliases, or untraceable names/bio 
+									<br/>(anonymous, alt, spoof, troll accounts)
+									<br/>&nbsp;
+								</p>
+								<img src="images/data_9.png" style="width: 60%; margin-top: 20px;">
+							</div>
+
+							<div class="text-center" style="align-self: flex-start; padding: 0 30px; border: 1px solid #ff2e623d; border-width: 0 1px; flex: 1;">
+								<p class="data__sentence" >
+									<span style="color: #ff2e63; line-height: 50px;">Identified</span>
+									<br/>Accounts that have real names, bio and/or are verified
+									<br/>(known social media personality, celebrity, blogger, personal accounts)
+								</p>
+								<img src="images/data_10.png" style="width: 60%; margin-top: 20px;">
+							</div>
+
+							<div class="text-center" style="align-self: flex-start; padding-left: 30px; flex: 1;">
+								<p class="data__sentence">
+									<span style="color: #ff2e63; margin-bottom: 10px; line-height: 50px;">Media</span>
+									<br/>Accounts by news outlets/personalities
+									<br/>(mainstream/alternative media, organizations, journalists)
+									<br/>&nbsp;
+								</p>
+								<img src="images/data_11.png" style="width: 60%; margin-top: 20px;">
+							</div>
+						</div>
+					</div>	
 				</div>
 			</div>
 

@@ -1465,4 +1465,112 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0;
 }
 
+.data__item {
+  margin-bottom: 40px;
+  padding: 30px;
+  cursor: default;
+  background: #fff;
+  /* -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.06);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.06); */
+  border: 1px solid #ff2e63;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 0px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.data__item:hover {
+  color: #333;
+  background: rgba(255, 107, 159, 0.4);
+  -webkit-box-shadow: 0px 8px 16px -4px rgba(0, 0, 0, 0.13);
+  -moz-box-shadow: 0px 8px 16px -4px rgba(0, 0, 0, 0.13);
+  box-shadow: 0px 8px 16px -4px rgba(0, 0, 0, 0.13);
+}
+
+.data__item:nth-child(2) {
+  /* border-right: none;
+  border-left: none; */
+}
+
+.data__title {
+  width: 100%;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.data__sentence {
+  margin: 0;
+}
+
+.data__sentence a {
+  font-size: 16px;
+  color: #fff;
+  border: 1px solid #ff2e63;
+  border-width: 5px 10px;
+  border-radius: 50px;
+  background: #ff2e63;
+  text-decoration: none !important;
+}
+
+.data__price {
+  font-weight: bold;
+  line-height: 95px;
+  width: 100px;
+  height: 100px;
+  margin: 1.15em auto 1em;
+  background: #ff2e63;
+  color: rgba(255, 255, 255, 0.8);
+  -webkit-transition: color 0.3s, background 0.3s;
+  transition: color 0.3s, background 0.3s;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.data__item:hover .data__price {
+  color: #fff;
+  background: #ff2e63;
+}
+
+.data__feature-list {
+  margin: 0;
+  padding: 1em 1em 2em 1em;
+  list-style: none;
+  text-align: center;
+}
+.data__feature-list li {
+  font-size: 16px;
+  line-height: 36px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  display: block;
+}
+
+.data__action {
+  font-weight: bold;
+  margin-top: auto;
+  padding: 0.75em 2em;
+  opacity: 0;
+  color: #fff;
+  background: #82C57E;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  -webkit-transform: translate3d(0, -15px, 0);
+  transform: translate3d(0, -15px, 0);
+}
+
+.data__item:hover .data__action {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.data__action:hover,
+.data__action:focus {
+  background: #6EA76B;
+}
+
 /*# sourceMappingURL=style.css.map */
