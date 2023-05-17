@@ -838,12 +838,76 @@
 				</div>
 			</div>
 
-			<div class="row">
+			<div class="col-md-6">
 				<div class="col-md-12">
 					<div class="data__item animate-box">
-						<iframe src="https://cs132grp24.github.io/cs132-group24/figures/engagement_count.html" style="width: 100%; min-height: 500px;"></iframe>
-					</div>
+						<p class="data__sentence text-center">
+							<span style="color: #ff2e63; line-height: 50px">Manual Pre-processing</span>
+							</br>
+							The following pre-processing techniques were manually applied to the <a class="feature">Tweet</a> column.
+							<br/>&nbsp;
+							<ul class="data__sentence">
+								<li>Translation of tweets to English. Translated tweets were put in a new column: <a class="feature">Tweet Translated</a></li>
+								<li>Removal of image alt text descriptions.</li>
+								<li>Conversion of emojis to descriptive text.</li>
+							</ul>
+						</p>
+					</div>	
 				</div>
+	
+				<div class="col-md-12">
+					<div class="data__item animate-box">
+						<p class="data__sentence text-center">
+							<span style="color: #ff2e63; line-height: 50px">Removal of Special Characters and Tokenization</span>
+							</br>
+							<span style="color: #ff2e63;">Tokenization</span> is the process of splitting a piece of text into smaller units of information called tokens.
+							<br/>&nbsp;
+							<ul class="data__sentence">
+								<li>We remove special characters (":", "@", "#", punctuation marks) from the translated tweets.</li>
+								<li>Before tokenization, we converted the translated tweets into lowercase and also removed the stopwords.</li>
+								<li>
+									We applied tokenization to the translated tweets using NLTK's word_tokenize function. 
+									A new column called <a class="feature">texts_tok</a> is created to store the list of tokens of each tweet.
+								</li>
+							</ul>
+						</p>
+					</div>	
+				</div>
+			</div>
+
+
+			<div class="col-md-6">
+				<div class="data__item animate-box">
+					<p class="data__sentence text-center">
+						<span style="color: #ff2e63; line-height: 50px">Stemming</span>
+						</br>
+						<span style="color: #ff2e63;">Stemming</span> is the process of reducing a word to its word stem by removing its affixes.
+						<br/>&nbsp;
+						<ul class="data__sentence">
+							<li>
+								We applied tokenization to the translated tweets using NLTK's PorterStemmer function. 
+								A new column called <a class="feature">texts_stem</a> is created to store the list of stemmed words of each tweet.
+							</li>
+						</ul>
+					</p>
+				</div>	
+			</div>
+
+			<div class="col-md-6">
+				<div class="data__item animate-box">
+					<p class="data__sentence text-center">
+						<span style="color: #ff2e63; line-height: 50px">Lemmatization</span>
+						</br>
+						<span style="color: #ff2e63;">Lemmatization</span> is the process of grouping together inflected forms of a word. It uses a dictionary (WordNet) to carry out morphological analysis of the words.
+						<br/>&nbsp;
+						<ul class="data__sentence">
+							<li>
+								We applied tokenization to the translated tweets using NLTK's WordNetLemmatizer function. 
+								A new column called <a class="feature">texts_lem</a> is created to store the list of lemmatized words of each tweet.
+							</li>
+						</ul>
+					</p>
+				</div>	
 			</div>
 
 			<div class="row">
@@ -864,7 +928,9 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="data__item animate-box">
-						<iframe src="https://cs132grp24.github.io/cs132-group24/figures/engagement_count.html" style="width: 100%; min-height: 500px;"></iframe>
+						<p class="data__sentence text-center">
+							We created a new feature called <a class="feature">Tweet Length</a> from <a class="feature">Tweet Translated</a> that contains the length of the tweet.
+						</p>
 					</div>
 				</div>
 			</div>
@@ -1002,6 +1068,22 @@
 								<span style="color: #ff2e63; font-weight: bold; font-size: 22px; line-height: 50px;">Topic Analysis</span>
 							</h3>
 						</div>
+
+						<div class="col-md-12">
+							<div class="data__item animate-box">
+								<p class="data__sentence text-center">
+									<span style="color: #ff2e63; line-height: 50px;">What are the most common words used in the tweets?</span>
+									</br>
+									We used a horizontal bar chart to show the top 25 most common words found in the tweets.
+									<br/>&nbsp;
+								</p>
+		
+								<img src="figures/most_common.png" style="width: 100%; margin-bottom: 20px;">
+								<p class="data__sentence text-center">
+									Figure #0: Bar graph showing the most common words used in the tweets.
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -1068,7 +1150,7 @@
 								<p class="data__sentence text-center">
 									<span style="color: #ff2e63; line-height: 50px;">How does the engagement (e.g. likes, retweets, comments) differ between account types?</span>
 									</br>
-									We use a strip plot to visualize the number of engagements of the tweets from both Anonymous and Identified accounts.
+									We used a strip plot to visualize the number of engagements of the tweets from both Anonymous and Identified accounts.
 									<br/>&nbsp;
 								</p>
 		
@@ -1084,7 +1166,7 @@
 								<p class="data__sentence text-center">
 									<span style="color: #ff2e63; line-height: 50px;">What is the distribution of the length of the content for each topic or content type?</span>
 									</br>
-									We use a facetted histogram to visualize the tweet length distribution separated by content type (emotional, rational).
+									We used a facetted histogram to visualize the tweet length distribution separated by content type (emotional, rational).
 									<br/>&nbsp;
 								</p>
 		
