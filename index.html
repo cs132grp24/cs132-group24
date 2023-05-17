@@ -81,7 +81,7 @@
 							<li><a href="#" data-nav-section="overview"><span>Overview</span></a></li>
 							<li><a href="#" data-nav-section="problem"><span>Problem</span></a></li>
 							<li><a href="#" data-nav-section="data"><span>Data</span></a></li>
-							<li><a href="#" data-nav-section="methods"><span>Methods</span></a></li>
+							<li><a href="#" data-nav-section="exploration"><span>Exploration</span></a></li>
 							<li><a href="#" data-nav-section="results"><span>Results</span></a></li>
 							<li><a href="#" data-nav-section="team"><span>Team</span></a></li>
 						</ul>
@@ -308,7 +308,7 @@
 					<h2 class="animate-box"><span>We mined the internet for fake news data.</span></h2>
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 subtext animate-box">
-							<h3>After defining the goal of this project, we now move on to the next step: data collection. <span style="color: #ff2e63;">Data collection</span> is the process of gathering relevant information that will help us answer the research questions.</h3>
+							<h3>After defining the goal of this project, we now move on to the next step: data collection. <span style="color: #ff2e63; font-weight: bold;">Data collection</span> is the process of gathering relevant information that will help us answer the research questions.</h3>
 						</div>
 					</div>
 					<div class="row">
@@ -324,14 +324,14 @@
 						<h3 class="data__title text-center">Keywords</h3>
 						<p class="data__sentence text-center">We used the following keywords in searching for relevant tweets.</p>
 						<p class="data__sentence text-center" style="margin-top: 20px; line-height: 2.5;">
-							<a>angat npa</a>
-							<a>angat buhay npa</a>
-							<a>angat buhay npa cpp</a>
-							<a>angat buhay recruit npa</a>
-							<a>angat buhay cpp</a>
+							<a class="keyword">angat npa</a>
+							<a class="keyword">angat buhay npa</a>
+							<a class="keyword">angat buhay npa cpp</a>
+							<a class="keyword">angat buhay recruit npa</a>
+							<a class="keyword">angat buhay cpp</a>
 							<br/>
-							<a>leni ngo npa</a>
-							<a>angatbuhay npa</a>
+							<a class="keyword">leni ngo npa</a>
+							<a class="keyword">angatbuhay npa</a>
 						</p>
 					</div>	
 				</div>
@@ -572,22 +572,64 @@
 		</div>
 	</section>
 	
-	<section id="fh5co-pricing" data-section="methods">
+	<section id="fh5co-pricing" data-section="exploration">
 		<section class="pricing-section bg-3">
       	<div class="container">
       		<div class="row">
 				<div class="col-md-12 section-heading text-center">
-					<h2 class="animate-box">Let's talk about our data science methodology.</h2>
+					<h2 class="animate-box">Let's now explore the data.</h2>
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 subtext animate-box">
-							<h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h3>
+							<h3>Our data exploration process consists of three steps: <span style="color: #ff2e63;">data pre-processing</span>, <span style="color: #ff2e63;">natural language processing</span>, and <span style="color: #ff2e63;">data visualization.</span> Data exploration is used to gain <span style="color: #ff2e63;">initial insights</span> about the data, which includes the <span style="color: #ff2e63;">learning about characteristics</span> and <span style="color: #ff2e63;">identifying patterns</span> in the dataset.</h3>
 						</div>
 					</div>
 				</div>
 			</div>
 
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-12">
+					<div class="data__item animate-box">
+						<p class="data__sentence text-center">Our dataset has a well-defined structure with 151 samples (rows) and 17 features (columns). This means that we have collected <span style="color: #ff2e63;">151 tweets</span> and each tweet is described using <span style="color: #ff2e63;">17 fields of information</span>. Below is the list of features in our dataset.</p>
+
+						<div style="display: flex; justify-content: space-around; margin-top: 30px;">
+							<div class="text-center" style="align-self: flex-start; padding-right: 30px; border-right: 1px solid #ff2e623d; flex: 1;">
+								<p class="data__sentence" >
+									<span style="color: #ff2e63; line-height: 50px;">Categorical (qualitative)</span>
+									<p class="data__sentence text-center" style="margin-top: 20px; line-height: 2.5;">
+										<a class="feature">Keywords</a>
+										<a class="feature">Account handle</a>
+										<a class="feature">Account name</a>
+										</br>
+										<a class="feature">Account bio</a>
+										<a class="feature">Account type</a>
+										<a class="feature">Joined</a>
+										<a class="feature">Location</a>
+										<a class="feature">Tweet</a>
+										<a class="feature">Tweet type</a>
+										<a class="feature">Date posted</a>
+										<a class="feature">Content type</a>
+									</p>
+								</p>
+							</div>
+
+							<div class="text-center" style="align-self: flex-start; padding-left: 30px; flex: 1;">
+								<p class="data__sentence">
+									<span style="color: #ff2e63; margin-bottom: 10px; line-height: 50px;">Numerical (quantitative)</span>
+									<p class="data__sentence text-center" style="margin-top: 20px; line-height: 2.5;">
+										<a class="feature">Following</a>
+										<a class="feature">Followers</a>
+										<a class="feature">Likes</a>
+										</br>
+										<a class="feature">Replies</a>
+										<a class="feature">Retweets</a>
+										<a class="feature">Quote Tweets</a>
+									</p>
+								</p>
+							</div>
+						</div>					
+					</div>	
+				</div>
+				<!-- <div class="col-md-6">
 					<div class="fh5co-portfolio animate-box">
 						<a>
 							<div class="portfolio-entry" style="background-image: url(images/portfolio-1.jpg);">
@@ -620,55 +662,504 @@
 							</div> 
 						</a>
 					</div>
+				</div> -->
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="data__item animate-box">
+						<p class="data__sentence text-center">Here is an example of what a sample (row) looks like in our dataset. </br> Note: This tweet is not included in our dataset.</p>
+						
+						<div style="display: flex; justify-content: space-around; margin-top: 30px;">
+							<div style="align-self: flex-start; padding-right: 30px; flex: 1;">
+								<p class="data__sentence">
+									<a class="feature">Keywords:</a> angat buhay npa </br>
+									<a class="feature">Account handle:</a> @PhilippineStar</br>
+									<a class="feature">Account name:</a> The Philippine Star</br>
+									<a class="feature">Account bio:</a> The official Twitter account of The Philippine STAR, flagship title of the country's most successful print media enterprise.</br>
+									<a class="feature">Account type:</a> </br>
+									<a class="feature">Joined:</a> 01/12</br>
+									<a class="feature">Following:</a> 866</br>
+									<a class="feature">Followers:</a> 1.4M</br>
+									<a class="feature">Location:</a> Philippines</br>
+								</p>
+							</div>
+
+							<div style="align-self: flex-start; padding-left: 30px; flex: 1;">
+								<p class="data__sentence">
+									<a class="feature">Tweet:</a> Senator Ronald "Bato" Dela Rosa on Monday defended former National Task Force to End Local Communist Armed Conflict (NTF-ELCAC) spokesperson Lorraine Badoy, who linked the CPP-NPA-NDF with the Angat Buhay NGO of former vice president Leni Robredo. {Image: Statement of Sen. Ronald "Bato" Dela Rosa}</br>
+									<a class="feature">Tweet type:</a> Text, Image</br>
+									<a class="feature">Date posted:</a> 07/12/22 20:03</br>
+									<a class="feature">Content type:</a> Rational</br>
+									<a class="feature">Likes:</a> 304</br>
+									<a class="feature">Replies:</a> 153</br>
+									<a class="feature">Retweets:</a> 45</br>
+									<a class="feature">Quote tweets:</a> 85</br>
+								</p>
+							</div>
+						</div>
+					
+					</div>	
 				</div>
 			</div>
 
-      		<!-- <div class="row">
-      			<div class="col-md-4 text-center animate-box">
-      				<div class="pricing__item">
-	                    <h3 class="pricing__title">Startup</h3>
-	                    <div class="pricing__price"><span class="pricing_currency">$</span>9.90</div>
-	                    <p class="pricing__sentence">Small business solution</p>
-	                    <ul class="pricing__feature-list">
-	                        <li class="pricing__feature">Unlimited calls</li>
-	                        <li class="pricing__feature">Free hosting</li>
-	                        <li class="pricing__feature">40MB of storage space</li>
-	                    </ul>
-	                    <p><a href="#" class="btn btn-primary btn-lg pricing__action">Read More</a></p>
-	                </div>	
-      			</div>
-      			<div class="col-md-4 text-center animate-box">
-      				<div class="pricing__item">
-	                    <h3 class="pricing__title">Medium</h3>
-	                    <div class="pricing__price"><span class="pricing_currency">$</span>29,90</div>
-	                    <p class="pricing__sentence">Medium business solution</p>
-	                    <ul class="pricing__feature-list">
-	                        <li class="pricing__feature">Unlimited calls</li>
-	                        <li class="pricing__feature">Free hosting</li>
-	                        <li class="pricing__feature">10 hours of support</li>
-	                        <li class="pricing__feature">Social media integration</li>
-	                        <li class="pricing__feature">1GB of storage space</li>
-	                    </ul>
-	                    <p><a href="#" class="btn btn-primary btn-lg pricing__action">Read More</a></p>
-	                </div>
-      			</div>
-      			<div class="col-md-4 text-center animate-box">
-      				<div class="pricing__item">
-	                    <h3 class="pricing__title">Large</h3>
-	                    <div class="pricing__price"><span class="pricing_currency">$</span>59,90</div>
-	                    <p class="pricing__sentence">Gigantic business solution</p>
-	                    <ul class="pricing__feature-list">
-	                        <li class="pricing__feature">Unlimited calls</li>
-	                        <li class="pricing__feature">Free hosting</li>
-	                        <li class="pricing__feature">Unlimited hours of support</li>
-	                        <li class="pricing__feature">Social media integration</li>
-	                        <li class="pricing__feature">Anaylitcs integration</li>
-	                        <li class="pricing__feature">Unlimited storage space</li>
-	                    </ul>
-	                    <p><a href="#" class="btn btn-primary btn-lg pricing__action">Read More</a></p>
-	                </div>
-      			</div>
-      		</div> -->
+			<div class="row">
+				<div class="col-md-12 section-heading text-center" style="padding-top: 60px;">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext animate-box">
+							<h3>
+								<span style="color: #ff2e63; font-weight: bold; font-size: 25px; line-height: 50px;">Data Pre-processing</span>
+								</br>
+								We applied multiple pre-processing techniques to clean our dataset.
+							</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="col-md-12">
+						<div class="data__item animate-box">
+							<p class="data__sentence text-center">
+								<span style="color: #ff2e63; line-height: 50px">Handling missing values</span>
+								</br>
+								Missing values can lead to inaccurate or biased results thus appropriate handling is necessary.
+								<br/>&nbsp;
+								<ul class="data__sentence">
+									<li>
+										The missing values in the <a class="feature">Account bio</a> and <a class="feature">Location</a> columns were filled with an <span style="color: #ff2e63;">empty string</span>.
+									</li>
+								</ul>
+							</p>
+						</div>	
+					</div>
+
+					<div class="col-md-12">
+						<div class="data__item animate-box">
+							<p class="data__sentence text-center">
+								<span style="color: #ff2e63; line-height: 50px">Categorical data encoding</span>
+								</br>
+								To prepare the data for modelling, some features need to be transformed into their correct data type.
+								<br/>&nbsp;
+								<ul class="data__sentence">
+									<li>
+										To use the <a class="feature">Date posted</a> column for time series analysis, its data type is converted from object to <span style="color: #ff2e63;">datetime</span>.
+									</li>
+									<br/>
+									<li>
+										The data type of <a class="feature">Joined</a> column is also converted from object to <span style="color: #ff2e63;">period</span>.
+									</li>
+									<br/>
+									<li>
+										The <a class="feature">Account type</a> column is a categorical feature thus its data type is converted from object to <span style="color: #ff2e63;">category</span>.
+									</li>
+									<br/>
+									<li>
+										<span style="color: #ff2e63;">One-hot encoding</span> is a process where categorical variables are converted in a format that is interpretable by machine learning algorithms. 
+										The <a class="feature">Tweet type</a> (Text, Image, Video, URL, Reply) and <a class="feature">Content type</a> (Rational, Emotional, Transactional) columns are 
+										multicategorical features that need to be one-hot encoded in order for their values to be used for tweet analysis. 
+										For example, if a record's <a class="feature">Tweet type</a> contains "Text, Image, Reply", it will be converted into (1, 1, 0, 0, 1).
+										We used sklearn's <span style="color: #ff2e63;">MultiLabelBinarizer</span> to generate new columns denoting the multiple labels of each sample.
+									</li>
+								</ul>
+							</p>
+						</div>	
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="data__item animate-box">
+						<p class="data__sentence text-center">
+							<span style="color: #ff2e63; line-height: 50px">Ensuring formatting consistency</span>
+							</br>
+							We made sure that all variables are consistently written. This is especially important for columns containing dates and numbers.
+							<br/>&nbsp;
+							<ul class="data__sentence">
+								<li>
+									The consistency of the dates found in the <a class="feature">Joined</a> and <a class="feature">Date posted</a> columns were checked and corrected manually.
+									To further ensure that the formatting in all rows is correct, we used Python's <span style="color: #ff2e63;">datetime module</span>.
+								</li>
+								<br/>
+								<li>
+									The numbers in the <a class="feature">Following</a> and <a class="feature">Followers</a> columns were also converted from string to <span style="color: #ff2e63;">integer</span>.
+								</li> 
+							</ul>
+						</p>
+					</div>	
+				</div>
+
+				<div class="col-md-6">
+					<div class="data__item animate-box">
+						<p class="data__sentence text-center">
+							<span style="color: #ff2e63; line-height: 50px">Detecting outliers</span>
+							</br>
+							Outliers are data points that <span style="color: #ff2e63;">deviate from the expected distribution</span>. It is important to identify them in order to understand why they occur and to decide how to best handle them.
+							<br/>&nbsp;
+							<ul class="data__sentence">
+								<li>
+									We looked for potential outliers in the following columns: <a class="feature">Joined</a>, <a class="feature">Date posted</a>, 
+									<a class="feature">Followers</a>, <a class="feature">Likes</a>, <a class="feature">Retweets</a>, <a class="feature">Quote tweets</a>, and <a class="feature">Replies</a>.
+								</li>
+							</ul>
+						</p>
+					</div>	
+				</div>
+
+				<div class="col-md-6">
+					<div class="data__item animate-box" style="min-height: 348px;">
+						<p class="data__sentence text-center">
+							<span style="color: #ff2e63; line-height: 50px">Normalizing the data</span>
+							</br>
+							In preparation for data modelling, normalization is done by adjusting the data of numerical categories to a common scale.
+							<br/>&nbsp;
+							<ul class="data__sentence">
+								<li>
+									We applied normalization to the following numerical columns: 
+									<a class="feature">Followers</a>, <a class="feature">Likes</a>, <a class="feature">Retweets</a>, <a class="feature">Quote tweets</a>, and <a class="feature">Replies</a>.
+								</li>
+							</ul>
+						</p>
+					</div>	
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12 section-heading text-center" style="padding-top: 60px;">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext animate-box">
+							<h3>
+								<span style="color: #ff2e63; font-weight: bold; font-size: 25px; line-height: 50px;">Natural Language Processing</span>
+								</br>
+								We applied multiple NLP techniques to aid us in identifying recurrent topics in the tweets of our dataset.
+							</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="data__item animate-box">
+						<iframe src="figures/engagement_count.html" style="width: 100%; min-height: 500px;"></iframe>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12 section-heading text-center" style="padding-top: 60px;">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext animate-box">
+							<h3>
+								<span style="color: #ff2e63; font-weight: bold; font-size: 25px; line-height: 50px;">Feature Generation</span>
+								</br>
+								This is the process of creating new features from one or more existing features in the dataset. 
+							</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="data__item animate-box">
+						<iframe src="figures/engagement_count.html" style="width: 100%; min-height: 500px;"></iframe>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12 section-heading text-center" style="padding-top: 60px;">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext animate-box">
+							<h3>
+								<span style="color: #ff2e63; font-weight: bold; font-size: 25px; line-height: 50px;">Data Visualization</span>
+								</br>
+								We created visualizations to make it easier to see and understand the trends and patterns in our data.
+							</h3>
+						</div>	
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 subtext animate-box text-center">
+					<h3>
+						<span style="color: #ff2e63; font-weight: bold; font-size: 22px; line-height: 50px;">Outlier Detection</span>
+					</h3>
+				</div>
+
+				<div class="col-md-12">
+					<div class="data__item animate-box">
+						<p class="data__sentence text-center">
+							<span style="color: #ff2e63; line-height: 50px;">Are there any outliers in the dataset?</span>
+							</br>
+							We used box plots to present outliers in the data. There are outliers found in the 
+							<a class="feature">Followers</a>, <a class="feature">Likes</a>, <a class="feature">Retweets</a>, 
+							<a class="feature">Quote Tweets</a>, and <a class="feature">Replies</a> columns. 
+							These may be considered as <span style="color: #ff2e63">true outliers</span> and, thus, should not be removed from the dataset.
+							<br/>&nbsp;
+						</p>
+
+						<div style="display: flex;">
+							<iframe src="figures/joined_outliers.html" style="width: 50%; min-height: 500px;"></iframe>
+							<iframe src="figures/dateposted_outliers.html" style="width: 50%; min-height: 500px;"></iframe>
+						</div>
+						
+						<p class="data__sentence text-center">
+							<br/>&nbsp;
+							Figure #0 (left): Box plot showing the distribution of the dates in the Joined column. <br>
+							Figure #0 (right): Box plot showing the distribution of the dates in the Date Posted column.
+							<br/>&nbsp;
+							<br/>&nbsp;
+						</p>
+
+						<div style="display: flex;">
+							<iframe src="figures/followers_outliers.html" style="width: 50%; min-height: 500px;"></iframe>
+							<iframe src="figures/likes_outliers.html" style="width: 50%; min-height: 500px;"></iframe>
+						</div>
+						
+						<p class="data__sentence text-center">
+							<br/>&nbsp;
+							Figure #0 (left): Box plot showing the distribution of numerical data in the Followers column. <br>
+							Figure #0 (right): Box plot showing the distribution of numerical data in the Likes column.
+							<br/>&nbsp;
+							<br/>&nbsp;
+						</p>
+
+						<div style="display: flex;">
+							<iframe src="figures/rts_outliers.html" style="width: 50%; min-height: 500px;"></iframe>
+							<iframe src="figures/qrts_outliers.html" style="width: 50%; min-height: 500px;"></iframe>
+						</div>
+						
+						<p class="data__sentence text-center">
+							<br/>&nbsp;
+							Figure #0 (left): Box plot showing the distribution of numerical data in the Retweets column. <br>
+							Figure #0 (right): Box plot showing the distribution of numerical data in the Quote Tweets column.
+							<br/>&nbsp;
+							<br/>&nbsp;
+						</p>
+
+						<iframe src="figures/replies_outliers.html" style="width: 100%; min-height: 500px;"></iframe>
+						<p class="data__sentence text-center">
+							Figure #0: Box plot showing the distribution of numerical data in the Replies column.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12 section-heading text-center" style="padding-top: 60px;">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext animate-box">
+							<h3>
+								<span style="color: #ff2e63; font-weight: bold; font-size: 22px; line-height: 50px;">Tweet Analysis</span>
+							</h3>
+						</div>
+
+						<div class="col-md-12">
+							<div class="data__item animate-box">
+								<p class="data__sentence text-center">
+									<span style="color: #ff2e63; line-height: 50px;">What is the distribution of tweet engagement (likes, retweets, replies) in the dataset?</span>
+									</br>
+									Using <span style="color: #ff2e63">Pearson Correlation</span>, we can observe that all tweet engagement indicators are <span style="color: #ff2e63">highly correlated</span> to each other. 
+									A coefficient value of 0.8 < r < 1 denotes a strongly positive correlation. Furthermore, 
+									<a class="feature">Likes</a> and <a class="feature">Retweets</a> almost have a perfectly positive correlation. 
+									This is also true for <a class="feature">Replies</a> and <a class="feature">Quote Tweets</a>; 
+									<a class="feature">Retweets</a> and <a class="feature">Quote Tweets</a>.
+									<br/>&nbsp;
+								</p>
+		
+								<iframe src="figures/engage_corr.html" style="width: 100%; min-height: 500px;"></iframe>
+								<p class="data__sentence text-center">
+									Figure #0: Heatmap showing the correlation between Likes, Retweets, Replies, and Quote Tweets.
+									<br/>&nbsp;
+									<br/>&nbsp;
+								</p>
+
+								<p class="data__sentence text-center">
+									This is clearly shown in the scatterplot matrix below. The matrix below shows the scatter plots for each feature versus another feature.
+									<br/>&nbsp;
+								</p>
+
+								<iframe src="figures/scatter_engage.html" style="width: 100%; min-height: 500px;"></iframe>
+								<p class="data__sentence text-center">
+									Figure #0: Scatter plot matrix showing the correlation between Likes, Retweets, Replies, and Quote Tweets.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row">
+				<div class="col-md-12 section-heading text-center" style="padding-top: 60px;">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext animate-box">
+							<h3>
+								<span style="color: #ff2e63; font-weight: bold; font-size: 22px; line-height: 50px;">Topic Analysis</span>
+							</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12 section-heading text-center" style="padding-top: 60px;">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext animate-box">
+							<h3>
+								<span style="color: #ff2e63; font-weight: bold; font-size: 22px; line-height: 50px;">Context Analysis</span>
+							</h3>
+						</div>
+
+						<div class="col-md-12">
+							<div class="data__item animate-box">
+								<p class="data__sentence text-center">
+									<span style="color: #ff2e63; line-height: 50px;">Is the dataset balanced or imbalanced with respect to a particular target variable?</span>
+									</br>
+									The <a class='feature'>Account type</a> variable is <span style="color: #ff2e63">highly imbalanced</span> with 136 anonymous accounts and only 15 identified accounts.
+									<br/>&nbsp;
+								</p>
+		
+								<iframe src="figures/account_type.html" style="width: 100%; min-height: 500px;"></iframe>
+								<p class="data__sentence text-center">
+									Figure #0: Bar graph showing the amount of tweets per account type category.
+								</p>
+							</div>
+						</div>
+						
+						<div class="col-md-12">
+							<div class="data__item animate-box">
+								<p class="data__sentence text-center">
+									<span style="color: #ff2e63; line-height: 50px;">What are the most common content types for each account type (e.g. articles, videos, tweets)?</span>
+									</br>
+									We visualize the tweet type distribution (text, reply, image, video, URL) by showing the tweet count, separated by account type.
+									<br/>&nbsp;
+								</p>
+		
+								<iframe src="figures/tweet_type.html" style="width: 100%; min-height: 500px;"></iframe>
+								<p class="data__sentence text-center">
+									Figure #0: Bar graph showing the amount of tweets per tweet type category.
+								</p>
+							</div>
+						</div>
+
+						<div class="col-md-12">
+							<div class="data__item animate-box">
+								<p class="data__sentence text-center">
+									<span style="color: #ff2e63; line-height: 50px;">How does the sentiment of the content differ between different account types?</span>
+									</br>
+									We visualize the content type distribution (emotional, rational) by showing the tweet count, separated by account type.
+									<br/>&nbsp;
+								</p>
+		
+								<iframe src="figures/content_type.html" style="width: 100%; min-height: 500px;"></iframe>
+								<p class="data__sentence text-center">
+									Figure #0: Bar graph showing the amount of tweets per content type category.
+								</p>
+							</div>
+						</div>
+			
+						<div class="col-md-12">
+							<div class="data__item animate-box">
+								<p class="data__sentence text-center">
+									<span style="color: #ff2e63; line-height: 50px;">How does the engagement (e.g. likes, retweets, comments) differ between account types?</span>
+									</br>
+									We use a strip plot to visualize the number of engagements of the tweets from both Anonymous and Identified accounts.
+									<br/>&nbsp;
+								</p>
+		
+								<iframe src="figures/engagement_count.html" style="width: 100%; min-height: 500px;"></iframe>
+								<p class="data__sentence text-center">
+									Figure #0: Strip plot showing the distribution of tweet engagements.
+								</p>
+							</div>
+						</div>
+
+						<div class="col-md-12">
+							<div class="data__item animate-box">
+								<p class="data__sentence text-center">
+									<span style="color: #ff2e63; line-height: 50px;">What is the distribution of the length of the content for each topic or content type?</span>
+									</br>
+									We use a facetted histogram to visualize the tweet length distribution separated by content type (emotional, rational).
+									<br/>&nbsp;
+								</p>
+		
+								<iframe src="figures/tweet_len.html" style="width: 100%; min-height: 500px;"></iframe>
+								<p class="data__sentence text-center">
+									Figure #0: Histogram showing the amount of tweets within a range of tweet lengths.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12 section-heading text-center" style="padding-top: 60px;">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext animate-box">
+							<h3>
+								<span style="color: #ff2e63; font-weight: bold; font-size: 22px; line-height: 50px;">Time Series Analysis</span>
+							</h3>
+						</div>
+
+						<div class="col-md-12">
+							<div class="data__item animate-box">
+								<p class="data__sentence text-center">
+									<span style="color: #ff2e63; line-height: 50px">What is the frequency of the time series data?</span>
+									</br>
+									To gain insights on possible trends that the data might have over time, we plot the frequencies of tweets by month, day, and time of day.
+									<br/>&nbsp;
+								</p>
+		
+								<iframe src="figures/freq_month.html" style="width: 100%; min-height: 500px;"></iframe>
+								<p class="data__sentence text-center">
+									Figure #0: Line plot showing the amount of tweets posted per month.
+									<br/>&nbsp;
+									<br/>&nbsp;
+								</p>
+		
+								<iframe src="figures/freq_day.html" style="width: 100%; min-height: 500px;"></iframe>
+								<p class="data__sentence text-center">
+									Figure #0: Line plot showing the amount of tweets posted per day.
+									<br/>&nbsp;
+									<br/>&nbsp;
+								</p>
+		
+								<iframe src="figures/freq_hour.html" style="width: 100%; min-height: 500px;"></iframe>
+								<p class="data__sentence text-center">
+									Figure #0: Line plot showing the amount of tweets posted per hour.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="data__item animate-box">
+						<p class="data__sentence text-center">
+							<span style="color: #ff2e63; line-height: 50px">Are there any significant events or changes in the time series data (e.g. sudden drops or spikes)?</span>
+							<br/>&nbsp;
+							There can be considered three significant events in 2022 that are related to the Angat Buhay NGO being labeled as allies of the CPP-NPA-NDF:
+							<br/>&nbsp;
+						</p>
+							<ol class="data__sentence">
+								<li><span style="color: #ff2e63">May 2022</span> - News of Robredo's plan to launch Angat Buhay NGO in July 2022</li>
+								<li><span style="color: #ff2e63">July 1, 2022</span> - Launching of Angat Buhay NGO</li>
+								<li><span style="color: #ff2e63">July 2022</span> - Lorraine Badoy claims that Angat Buhay NGO is a front of NPA</li>
+							</ol>
+							<br/>
+						<p class="data__sentence text-center">
+							Looking at the line plot above, an increase of tweets can be noticed in May 2022 and July 2022 especially for those posted by anonymous users. The said events might be a contributing factor to the sudden increase of mis/disinformation tweets during those specific months.
+						</p>
+					</div>
+				</div>
+			</div>
       	</div>
      	</section>
 	</section>	
