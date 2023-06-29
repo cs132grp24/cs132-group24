@@ -759,7 +759,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .pricing__item:hover {
   color: #333;
-  background: rgba(255, 107, 159, 0.4);
+  background: rgba(244, 179, 202, 0.4);
   -webkit-box-shadow: 0px 8px 16px -4px rgba(0, 0, 0, 0.13);
   -moz-box-shadow: 0px 8px 16px -4px rgba(0, 0, 0, 0.13);
   box-shadow: 0px 8px 16px -4px rgba(0, 0, 0, 0.13);
@@ -955,6 +955,16 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff !important;
   text-decoration: underline;
 }
+#fh5co-footer a.btn {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #ff2e63;
+  padding: 10px;
+}
+#fh5co-footer a.btn:hover {
+  color: #fff !important;
+  text-decoration: none;
+  background-color: #ce2b53;
+}
 #fh5co-footer .section-title {
   font-size: 22px;
   color: #fff;
@@ -1062,6 +1072,7 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-footer #btn-submit {
   color: rgba(255, 255, 255, 0.9) !important;
   background: #ff2e63 !important;
+  width: 20%;
 }
 
 #fh5co-footer .team__members {
@@ -1484,7 +1495,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .data__item:hover {
   color: #333;
-  background: rgba(255, 107, 159, 0.4);
+  background: rgba(244, 179, 202, 0.4);
   -webkit-box-shadow: 0px 8px 16px -4px rgba(0, 0, 0, 0.13);
   -moz-box-shadow: 0px 8px 16px -4px rgba(0, 0, 0, 0.13);
   box-shadow: 0px 8px 16px -4px rgba(0, 0, 0, 0.13);
@@ -1520,6 +1531,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   border: 1px solid #8f989f;
   border-width: 2px 5px;
+  border-radius: 5px;
   background: #8f989f;
   text-decoration: none !important;
 }
